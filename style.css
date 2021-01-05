@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+
+    font-family:  "맑은고딕","Malgun Gothic",sans-serif;
+    font-size: 22px;
+    color: #333333;
+    
+    background-color: #487ef3;
+}
+
+main {
+    width: 100%;
+    max-width: 640px;
+    min-height: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    
+    background-color: #fff;
+
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+input{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 36px;
+}
+
+button{
+    margin-bottom: 20px;
+    width: 300px;
+
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#phoneNumberText {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+
+    background-color: transparent;
+}
+
+#warningMessage {
+    height: 22px;
+
+    color: #ff5967;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-bottom: 0;
+    
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    margin-top: auto;
+}
+
+.button-wrapper button {
+    display: inline-block;
+    height: 40px;
+    width: 180px;
+    
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    padding: 0 32px;
+
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 40px;
+    
+    cursor: pointer;
+  
+    transition: background-color 0.2s;
+}
+
+.button-wrapper button.cancel {
+  background-color: #959595;
+}
+
+.button-wrapper button.submit {
+  background-color: #487ef3;
+}
